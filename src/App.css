@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,61 @@
   to {
     transform: rotate(360deg);
   }
+} */
+ .parent{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./photos/bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1; /* Ensures the background stays behind other content */
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+ }
+input{
+  height: 2rem;
+  width: 2rem;
+  padding: 1rem;
+  margin: 0.5rem;
+  border-width: 3px;
+  border-radius: 20px;
+}
+#verify-button {
+  background-color: #3f0ad1; /* Green background */
+  border: none; /* Remove border */
+  color: white; /* White text */
+  padding: 15px 32px; /* Some padding */
+  text-align: center; /* Center the text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Make it inline-block */
+  font-size: 16px; /* Increase font size */
+  margin: 4px 2px; /* Some margin */
+  cursor: pointer; /* Pointer/hand icon */
+  border-radius: 12px; /* Rounded corners */
+  transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+#verify-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+.parent-timer{
+  display: flex;
+  gap: 20px;
+}
+.parent >h1{
+  margin-bottom: 0%;
+  font-size: 70px;
 }
